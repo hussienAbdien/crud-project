@@ -1,0 +1,65 @@
+<html>
+    <head>
+     <link rel="stylesheet" href="bootstrap.min.css">
+    </head>
+    <body>
+        <div class="w-75 m-auto p-4">
+        
+            <div class="form-group">
+                <!-- <div class="alert alert-danger"> </div> -->
+                <label for="prName">product name</label>
+                <input class="form-control" type="text" name="" id="prName">
+
+                <div id="proudectNameAlert" class="d-none alert alert-danger">
+                    <h6>user must be upperCase</h6>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="productPrice">productPrice</label>
+                <input class="form-control " type="number" name="" id="productPrice">
+            </div>
+
+            <div class="form-group">
+                <label for="productCategory">productCategory</label>
+                <input class="form-control" type="text" name="" id="productCategory">
+            </div>
+
+            <div class="form-group">
+                <label for="productDesc">productDesc</label>
+                <input class="form-control" type="text" name="" id="productDesc">
+            </div>
+
+            <button onclick="addProduct()" class="btn btn-outline-info">add product</button>
+           </div>
+            <div class="w-75 m-auto py-3">
+            <input onkeyup="searchProduct(this.value)" class="form-control m-auto w-75" type="text" name="" id="productDesc" placeholder="Search11">
+
+            <table class="table my-5">
+                <thead >
+                <th>Index</th>
+                <th>productName</th>
+                <th>productPrice</th>
+                <th>productCategory</th>
+                <th>productDesc</th>
+                <th>update</th>
+                <th>delete</th>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- <td>0</td>
+                    <td>Toshiba</td>
+                    <td>8000</td>
+                    <td>mobile</td>
+                    <td>good</td>
+                    <td><button class="btn btn-outline-warning">update</button></td>
+                    <td><button class="btn btn-outline-danger">update</button></td> -->
+
+                </tbody>
+            </table>
+            </div>
+            
+        
+        <script src="script.js"></script>
+    </body>
+</html>
